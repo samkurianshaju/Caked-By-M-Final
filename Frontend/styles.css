@@ -28,7 +28,12 @@ header {
     font-size: 2em;
     color: #003366; /* Deep Navy Blue */
     font-family: 'Sevillana', cursive; /* Apply the Sevillana font */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow for enhanced readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle 3D effect */
+    transition: text-shadow 0.3s ease; /* Smooth transition */
+}
+
+.header-content h1:hover {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced 3D effect on hover */
 }
 
 .social-icons {
@@ -68,8 +73,8 @@ footer {
 
 .logo {
     border-radius: 50%;
-    width: 3cm;
-    height: 3cm;
+    width: 2.3cm;
+    height: 2.3cm;
     object-fit: cover;
     border: 2px solid #d4a68a; /* Warm Sand */
     transition: transform 0.4s ease, opacity 0.4s ease, box-shadow 0.4s ease;
@@ -85,7 +90,7 @@ footer {
 .box {
     width: calc(50% - 40px); /* Adjust width for padding */
     max-width: 210px;
-    height: 260px;
+    height: 280px;
     text-align: center;
     border: 2px solid #e0f7fa; /* Soft Light Blue */
     border-radius: 10px;
