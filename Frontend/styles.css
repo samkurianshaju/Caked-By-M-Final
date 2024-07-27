@@ -5,12 +5,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff0f5; /* Lavender Blush */
+    background: linear-gradient(to bottom, #f8d7da, #fbeef1 50%, #f8d7da); /* Lighter pink gradient effect */
 }
 
 header {
     width: 100%;
-    background-color: #ffb6c1; /* Light Pink */
+    background-color: transparent; /* Transparent */
     text-align: center;
     padding: 20px 0;
 }
@@ -22,12 +22,12 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    background-color: #fff0f5; /* Lavender Blush */
+    background-color: transparent; /* Transparent */
 }
 
 footer {
     width: 100%;
-    background-color: #ffb6c1; /* Light Pink */
+    background-color: transparent; /* Transparent */
     text-align: center;
     padding: 10px 0;
 }
@@ -37,7 +37,7 @@ footer {
     width: 3cm;
     height: 3cm;
     object-fit: cover;
-    border: 2px solid #ff69b4; /* Hot Pink */
+    border: 2px solid #f5a5a8; /* Lighter pink */
 }
 
 .box {
@@ -45,12 +45,12 @@ footer {
     max-width: 200px;
     height: 200px;
     text-align: center;
-    border: 2px solid #ff69b4; /* Hot Pink */
+    border: 2px solid #f5a5a8; /* Lighter pink */
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    background-color: #ffe4e1; /* Misty Rose */
+    background-color: #fbeef1; /* Even lighter pink */
     transition: transform 0.3s ease;
 }
 
@@ -68,7 +68,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: rgba(255, 105, 180, 0.8); /* Semi-transparent Hot Pink */
+    background-color: rgba(245, 165, 168, 0.8); /* Semi-transparent lighter pink */
     color: white;
     margin: 0;
     padding: 10px 0;
