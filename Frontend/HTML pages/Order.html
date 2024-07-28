@@ -2,9 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | My Cake Business</title>
+    <meta name="description" content="Get in touch with us for your cake needs. Contact us for orders, inquiries, and more!">
+    <link rel="stylesheet" href="../Styles/order.css"> <!-- Ensure the path is correct -->
+    <link rel="icon" href="../images/logo.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-RaswN2B0l5EV3iShRI4ZjI8lVjLT3WlO1Tc0jBG4WdkZoRM5oR07KjSO7eqOd2JZBF2/4kD8rxQzvXwhOvM0Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"> <!-- Google Font -->
 </head>
 <body>
+    <header class="contact-header">
+        <div class="order-header-content">
+            <img src="../images/logo.jpeg" alt="Logo of My Cake Business" class="logo">
+            <div class="site-name">Contact Us</div>
+            <h1>CakedByM</h1>
+        </div>
+    </header>
+    <main class="contact-main">
+        <div class="contact-container">
+            <section class="contact-details">
+                <h2>Contact Details</h2>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Email:</strong> info@mycakebusiness.com</p>
+                <p><strong>Address:</strong> 123 Cake Street, Baker City, CA 90210</p>
+            </section>
+            <section class="contact-form">
+                <h2>Get in Touch</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="purpose">Purpose of Contact:</label>
+                    <select id="purpose" name="purpose" required>
+                        <option value="order">Order Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="message">Comment:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Cake Business. All rights reserved.</p>
+    </footer>
 </body>
 </html>

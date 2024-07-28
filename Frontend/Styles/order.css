@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fef3f9; /* Very Light Pink */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.contact-header {
+    width: 100%;
+    background-color: #ffd6e7; /* Very Light Pink */
+    padding: 20px 0;
+    border-bottom: 2px solid #ffb0ca; /* Light Pink */
+    color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+.order-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+    transition: padding 0.3s ease; /* Smooth transition */
+}
+
+.contact-header .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.contact-header .logo:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    opacity: 0.8; /* Slightly fade on hover */
+}
+
+.contact-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+    color: #ff69b4; /* Hot Pink */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow for better readability */
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.contact-header h1:hover {
+    color: #ff85c1; /* Lighter Pink */
+    transform: translateY(-5px); /* Move up slightly on hover */
+}
+
+.contact-header .site-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 20px;
+    color: #ff69b4; /* Hot Pink */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.contact-header .site-name:hover {
+    color: #ff85c1; /* Lighter Pink */
+    transform: translateY(-5px); /* Move up slightly on hover */
+}
+
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    transition: padding 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row; /* Align items side by side */
+    gap: 20px; /* Reduce gap between sections */
+    width: 80%;
+    max-width: 1200px; /* Adjust max-width to accommodate wider content */
+    transition: gap 0.3s ease, max-width 0.3s ease; /* Smooth transition */
+}
+
+.contact-details {
+    flex: 1; /* Make contact-details smaller */
+    background-color: #fff; /* White */
+    padding: 20px; /* Reduce padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, padding 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    border: 1px solid #ffb0ca; /* Light Pink border */
+}
+
+.contact-details:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.contact-form {
+    flex: 2; /* Make contact-form larger */
+    background-color: #fff; /* White */
+    padding: 20px; /* Reduce padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, padding 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    border: 1px solid #ffb0ca; /* Light Pink border */
+}
+
+.contact-form:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.contact-details h2, .contact-form h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ff69b4; /* Hot Pink */
+    margin-bottom: 15px; /* Reduce margin-bottom */
+    font-size: 1.5em; /* Resize font */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.contact-details h2:hover, .contact-form h2:hover {
+    color: #ff85c1; /* Lighter Pink */
+}
+
+.contact-details p {
+    font-size: 1em; /* Reduce font size */
+    color: #ff69b4; /* Hot Pink */
+    line-height: 1.4; /* Reduce line height */
+    margin: 5px 0; /* Reduce margin between paragraphs */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.contact-details p:hover {
+    color: #ff85c1; /* Lighter Pink */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduce gap between form elements */
+    transition: gap 0.3s ease; /* Smooth transition */
+}
+
+.contact-form label {
+    font-size: 1em; /* Reduce font size */
+    color: #ff69b4; /* Hot Pink */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.contact-form label:hover {
+    color: #ff85c1; /* Lighter Pink */
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    padding: 10px; /* Reduce padding */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9em; /* Reduce font size */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+    border-color: #ff69b4; /* Hot Pink */
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.2); /* Hot Pink shadow on focus */
+    transform: scale(1.02); /* Slightly enlarge on focus */
+}
+
+.contact-form button {
+    padding: 10px; /* Reduce padding */
+    background-color: #ff69b4; /* Hot Pink */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em; /* Reduce font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.contact-form button:hover {
+    background-color: #ff85c1; /* Lighter Pink */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffd6e7; /* Very Light Pink */
+    color: #fff;
+    font-size: 1em;
+    margin-top: 40px;
+    width: 100%;
+    border-top: 2px solid #ffb0ca; /* Light Pink */
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+footer:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
