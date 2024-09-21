@@ -3,11 +3,13 @@ html, body {
     margin: 0;
 }
 
-body {
-    background-image: url('../images/CBM Backgroud.jpeg'); /* Ensure the correct path to your background image */
-    background-size: contain; /* Ensure the whole image is visible */
+.background-wrapper {
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    background-image: url('../images/CBM Backgroud.jpeg');
+    background-size: 100% 100%; /* Stretch to fill the entire area */
     background-position: center; /* Center the image */
-    background-attachment: scroll; /* Scroll with the content (use fixed if you want it to stay in place) */
+    /*background-attachment: fixed; /* Keep it fixed while scrolling */
     background-repeat: no-repeat; /* Prevent repeating the image */
     background-color: #f0f0f0; /* Fallback background color */
 }
