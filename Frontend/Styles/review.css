@@ -1,0 +1,13 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('../images/CBM Backgroud.jpeg'); /* Ensure the correct path to your background image */
+    background-size: contain; /* Ensure the whole image is visible */
+    background-position: center; /* Center the image */
+    background-attachment: scroll; /* Scroll with the content (use fixed if you want it to stay in place) */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-color: #f0f0f0; /* Fallback background color */
+}
