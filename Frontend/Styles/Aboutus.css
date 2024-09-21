@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe4d4; /* Light Peach */
+    color: #333;
+}
+
+header {
+    position: relative; /* Position header relative for logo positioning */
+    text-align: center;
+    padding: 20px;
+    height: 130px; /* Increased height of the header */
+    background: linear-gradient(135deg, #c286a9, #f7f2e7); /* Gradient for the header */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced 3D effect */
+    border-bottom: 5px solid #ff69b4; /* Accent border */
+}
+
+
+.logo {
+    width: 100px; /* Adjust width as needed */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+    animation: glow 1.5s infinite alternate,
+               pulse 2s infinite,
+               shadowExpand 1.5s infinite alternate,
+               colorChange 5s infinite alternate,
+               moveLogo 8s linear infinite; /* Slowed down movement */
+    position: absolute; /* Positioning for movement */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+        border-color: rgba(255, 105, 180, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(255, 105, 180, 1);
+        border-color: rgba(255, 105, 180, 1);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes shadowExpand {
+    0% {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(180deg);
+    }
+}
+
+/* Logo Movement Animation */
+@keyframes moveLogo {
+    0% {
+        left: 0; /* Start from the left */
+        transform: translateY(-50%) rotate(0deg); /* Initial rotation */
+    }
+    50% {
+        left: calc(100% - 110px); /* Move to the right */
+        transform: translateY(-50%) rotate(180deg); /* Half rotation while moving */
+    }
+    100% {
+        left: 0; /* Move back to the left */
+        transform: translateY(-50%) rotate(360deg); /* Full rotation back */
+    }
+}
+
+.background-wrapper {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    background-color: #f7f2e7; /* Creamy Beige */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    width: 80%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* 3D shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25); /* Deeper shadow on hover */
+}
+
+header h1 {
+    font-size: 2.5em; /* Adjust size as needed */
+    color: #ff69b4; /* Pink color */
+    font-family: 'Lobster', cursive; /* Fun font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    letter-spacing: 1px; /* Slight spacing between letters */
+    transition: transform 0.3s, color 0.3s; /* Transition effects */
+}
+
+header h1:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    color: #c286a9; /* Change color on hover */
+}
+
+h2 {
+    color: #c286a9; /* Your preferred shade */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Light text shadow for depth */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Shadow for footer */
+    margin-top: auto; /* Push footer to the bottom */
+}
