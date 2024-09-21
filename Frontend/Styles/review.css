@@ -12,4 +12,105 @@ html, body {
     /*background-attachment: fixed; /* Keep it fixed while scrolling */
     background-repeat: no-repeat; /* Prevent repeating the image */
     background-color: #f0f0f0; /* Fallback background color */
+        min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adds a slight white overlay */
+}
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../images/CBM_Backgroud.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    height: 100%;
+}
+
+/* Header section */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #ff69b4;
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px; /* Added margin for spacing */
+}
+
+/* Review Section */
+.review-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.review-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative; /* For any additional styling */
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance hover effect */
+}
+
+.review-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ff69b4;
+}
+
+.review-card p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.review-card .stars {
+    font-size: 1.2em;
+    color: #f39c12;
+}
+
+/* Footer Section */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1em;
+}
+
+footer a {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
